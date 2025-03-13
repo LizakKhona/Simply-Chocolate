@@ -23,4 +23,27 @@
   background-image: url("../images/logo.png");
   background-size: cover;
   background-position: center;
+}
+
+.subscribe {
+  background-image: url(../../images/src/images/choco-bg-sec8-1x-desktop-min.png);
+}
+.subscribe .subscribe__title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+.subscribe .subscribe__title .subscrribe__text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */
