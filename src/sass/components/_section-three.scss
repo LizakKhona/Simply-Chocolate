@@ -1,0 +1,77 @@
+.components{
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+.components__title {
+  font-family: Montserrat;
+}
+.components__title {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111111;
+}
+.components__span {
+  color: #fd9222;
+}
+.components__text {
+  font-family:Montserrat ;
+  font-weight: 400;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #111111;
+}
+.ingredients {
+  display: flex;
+  column-gap: 19px;
+}
+.ingredients__item {
+  border-radius: 15px;
+  width: 270px;
+  height: 270px;
+}
+.ingredients__item {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ingredients__item:nth-child(1) {
+  background-color: #fd9222;
+  background-image: url(../../images/choco-milk-sec3-1x-desktop-min.png);
+}
+.ingredients__item:nth-child(2) {
+  background-color: #fff;
+  border: 1px solid #fd9222;
+  background-image: url(../../images/milk-sec3-1x-desktop-min.png);
+}
+.ingredients__item:nth-child(3) {
+  background-color: #1e1823;
+  background-image: url(../../images/nuts-sec3-1x-desktop-min.png);
+}
+.ingredients__item:nth-child(4) {
+  background-color: #fff;
+  background-image: url(../../images/semi-sw-choco-sec3-1x-desktop-min.png);
+  border: 1px solid #fd9222;
+}
+.ingredients__name {
+  position: absolute;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  left: 28px;
+  bottom: 28px;
+}
+.ingredients__name--black {
+  color: #111111;
+  
+}
+.ingredients__name--white {
+  color: #fff;
+}
