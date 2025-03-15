@@ -1,3 +1,10 @@
+<<<<<<< Updated upstream
+=======
+.container {
+  width: 375px;
+  padding: 0 20px;
+}
+>>>>>>> Stashed changes
 .components {
   width: 375px;
   padding-top: 128px;
@@ -20,9 +27,13 @@
   margin-bottom: 32px;
   margin-top: 24px;
   font-family: Montserrat, sans-serif;
+<<<<<<< Updated upstream
   font-weight: 400;
   line-height: 1.29;
   letter-spacing: -0.02em;
+=======
+  line-height: 1.29;
+>>>>>>> Stashed changes
   text-align: center;
   color: #111111;
 }
@@ -30,7 +41,10 @@
   flex-direction: column;
   display: flex;
   row-gap: 20px;
+<<<<<<< Updated upstream
   align-items: center;
+=======
+>>>>>>> Stashed changes
 }
 .ingredients__item {
   position: relative;
@@ -42,21 +56,37 @@
 }
 .ingredients__item:nth-child(1) {
   background-color: #fd9222;
+<<<<<<< Updated upstream
   background-image: url(./image/choco-milk-sec2-1x-desktop.png);
   @media (min-device-pixel-ratio:2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     background-image: url(../../images/choco-milk-sec3-2x-desktop-min.png);
+=======
+  background-image: url(../images/choco-milk-sec3-1x-desktop-min.png);
+  @media (min-device-pixel-ratio:2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/choco-milk-sec3-2x-desktop-min.png);
+>>>>>>> Stashed changes
   }
 }
 .ingredients__item:nth-child(2) {
   background-color: #fff;
   border: 1px solid #fd9222;
+<<<<<<< Updated upstream
   background-image: url(../../images/milk-sec3-1x-desktop-min.png);
   @media (min-device-pixel-ratio:2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     background-image: url(../../images/milk-sec3-2x-desktop-min.png);
+=======
+  background-image: url(../images/milk-sec3-1x-desktop-min.png);
+  @media (min-device-pixel-ratio:2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/milk-sec3-2x-desktop-min.png);
+>>>>>>> Stashed changes
   }
 }
 .ingredients__item:nth-child(3) {
@@ -83,7 +113,10 @@
   font-family: Montserrat, sans-serif;
   font-weight: 600;
   line-height: 1.29;
+<<<<<<< Updated upstream
   letter-spacing: -0.02em;
+=======
+>>>>>>> Stashed changes
   text-transform: uppercase;
   left: 28px;
   bottom: 28px;
