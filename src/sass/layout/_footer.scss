@@ -11,12 +11,10 @@
 }
 .footer__title {
   width: 300px;
-  font-family: $font-family;
   color: $white-color;
   font-weight: 500;
   font-size: 28px;
   line-height: 1.21;
-  letter-spacing: -0.02em;
 }
 .footer__span {
   color: $orange-color;
@@ -28,9 +26,7 @@
 }
 .address__text {
   margin-bottom: 14px;
-  font-family: $font-family;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.29;
   color: $white-color;
 }
@@ -44,8 +40,6 @@
 .contacts__link {
   display: block;
   margin-bottom: 4px;
-  font-family: $font-family;
-  font-size: 14px;
   line-height: 1.29;
   color: $white-color;
 }
@@ -64,9 +58,7 @@
   flex-direction: column;
 }
 .navigation__link {
-  font-family: $font-family;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   color: $white-color;
 }
