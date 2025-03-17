@@ -1,0 +1,95 @@
+.components {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+.components__title {
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $black-color;
+}
+.components__span {
+  color: $orange-color;
+}
+.components__text {
+  margin-bottom: 32px;
+  margin-top: 24px;
+  font-family: $font-family;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: $black-color;
+}
+.ingredients {
+  flex-direction: column;
+  display: flex;
+  row-gap: 20px;
+  align-items: center;
+}
+.ingredients__item {
+  position: relative;
+  width: 100%;
+  height: 270px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+}
+.ingredients__item:nth-child(1) {
+  background-color: $orange-color;
+  background-image: url(../images/choco-milk-sec2-1x-desktop-min.png);
+  @media (min-device-pixel-ratio:2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/choco-milk-sec2-2x-desktop-min.png);
+  }
+}
+.ingredients__item:nth-child(2) {
+  background-color: $white-color;
+  border: 1px solid $orange-color;
+  background-image: url(../images/milk-sec3-1x-desktop-min.png);
+  @media (min-device-pixel-ratio:2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/milk-sec3-2x-desktop-min.png);
+  }
+}
+.ingredients__item:nth-child(3) {
+  background-color: $darkblue-color;
+  background-image: url(../images/nuts-sec3-1x-desktop-min.png);
+  @media (min-device-pixel-ratio:2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/nuts-sec3-2x-desktop-min.png);
+  }
+}
+.ingredients__item:nth-child(4) {
+  background-color: $white-color;
+  background-image: url(../images/semi-sw-choco-sec3-1x-desktop-min.png);
+  border: 1px solid $orange-color;
+  @media (min-device-pixel-ratio:2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/semi-sw-choco-sec3-2x-desktop-min.png);
+  }
+}
+.ingredients__name {
+  position: absolute;
+  font-family: $font-family;
+  font-weight: 600;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  left: 28px;
+  bottom: 28px;
+}
+.ingredients__name--black {
+  color: $black-color;
+}
+.ingredients__name--white {
+  color: $white-color;
+}
