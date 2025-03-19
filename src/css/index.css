@@ -54,6 +54,39 @@ body {
     max-width: 1200px;
   }
 }
+.benefits {
+  background-color: #1e1823;
+  color: #fafafa;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.benefits__title {
+  display: none;
+}
+
+.benefits__icon {
+  border: 1px solid rgba(255, 255, 255, 0.0980392157);
+  border-radius: 365px;
+  width: 32px;
+  height: 32px;
+  padding: 15px;
+}
+
+.benefits__subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fafafa;
+  margin-top: 22px;
+  margin-bottom: 18px;
+}
+
+.benefits__text {
+  color: rgba(255, 255, 255, 0.0980392157);
+  margin-bottom: 20px;
+}
+
 .components {
   padding-top: 128px;
   padding-bottom: 128px;
