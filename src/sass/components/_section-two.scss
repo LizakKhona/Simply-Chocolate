@@ -1,0 +1,28 @@
+.benefits {
+  background-color: $darkblue-color;
+  color: $white-color;
+  padding: 20px 0px;
+}
+.benefits__icon {
+  border: 1px solid $grey-color;
+  border-radius: 365px;
+  width: 32px;
+  height: 32px;
+  padding: 15px;
+}
+.benefits__list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 38px;
+}
+.benefits__subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  color: $white-color;
+  margin-top: 22px;
+  margin-bottom: 18px;
+}
+.benefits__text {
+  color: $grey-color;
+}
