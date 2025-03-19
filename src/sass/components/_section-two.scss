@@ -1,12 +1,7 @@
 .benefits {
   background-color: $darkblue-color;
   color: $white-color;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-}
-.benefits__title {
-  display: none;
+  padding: 20px 0px;
 }
 .benefits__icon {
   border: 1px solid $grey-color;
@@ -14,6 +9,12 @@
   width: 32px;
   height: 32px;
   padding: 15px;
+}
+.benefits__list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 38px;
 }
 .benefits__subtitle {
   font-weight: 600;
@@ -24,5 +25,4 @@
 }
 .benefits__text {
   color: $grey-color;
-  margin-bottom: 20px;
 }
