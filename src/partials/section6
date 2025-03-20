@@ -1,0 +1,29 @@
+ <section>
+        <div>
+            <h2>
+               TOP SELLERS 
+            </h2>
+            <ul>
+                <li>
+                    <img src="">
+                </li>
+                <li>
+                    <img src="">
+                </li>
+                <li>
+                    <img src="">
+                </li>
+
+            </ul>
+            <div>
+                <p>
+                   Crazy enough chocolate originates from a bean just like the coffee bean called Cacao.
+                  Cacao has been around for thousands of years and was first discovered by the Native American 
+                    tribe called the Mayans. 
+                </p>
+                <button>
+                  Buy now  
+                </button>
+            </div>
+        </div>
+    </section>
