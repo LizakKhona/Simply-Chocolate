@@ -65,11 +65,11 @@ body {
 }
 
 .benefits__icon {
-  border: 1px solid rgba(255, 255, 255, 0.0980392157);
+  /*   border: 1px solid $grey-color; */
   border-radius: 365px;
-  width: 32px;
-  height: 32px;
-  padding: 15px;
+  /*   width: 32px;
+    height: 32px;
+    padding: 15px; */
 }
 
 .benefits__list {
