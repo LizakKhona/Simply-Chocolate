@@ -37,8 +37,25 @@ body {
   font-weight: 400;
 }
 
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--chorniy);
+}
+
+.title--orange {
+  color: #fd9222;
+}
+
 .container {
-  width: 100%;
+  min-width: 375px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -191,6 +208,107 @@ body {
 
 .ingredients__name--white {
   color: #fafafa;
+}
+
+.products {
+  padding-top: 72px;
+  background-color: #fafafa;
+  position: relative;
+}
+
+.products__list {
+  display: flex;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+}
+
+.products__item {
+  background: #fff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  width: 335px;
+  height: 364px;
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+
+.products__img {
+  display: block;
+  width: 230px;
+  height: 201px;
+  margin: 32px auto 8px;
+}
+
+.products__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.products__name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.products__price {
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  color: #111;
+  text-align: center;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  padding: 8px 20px;
+  margin: 0 auto;
+  width: 94px;
+  margin-bottom: 32px;
+}
+
+.carousel__idicator {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel__img {
+  width: 236px;
+  height: 13px;
+}
+
+.carousel__desktop {
+  display: none;
+}
+
+.carousel-control-prev {
+  position: fixed;
+  opacity: 0;
+}
+
+.carousel-control-prev:hover {
+  position: fixed;
+  opacity: 0;
+}
+
+.carousel-control-next {
+  position: fixed;
+  opacity: 0;
+}
+
+.carousel-control-next:hover {
+  position: fixed;
+  opacity: 0;
 }
 
 .footer {
