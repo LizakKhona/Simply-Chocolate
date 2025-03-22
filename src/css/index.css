@@ -69,16 +69,42 @@ img {
   text-align: center;
   color: #fff;
 }
+@media screen and (min-width: 375px) {
+  .subscribe__title {
+    font-size: 20px;
+    margin: 0 auto;
+    line-height: 1.2;
+    width: 291px;
+    height: 48px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscribe__title {
+    font-size: 24px;
+    margin: 0 auto;
+    line-height: 1.17;
+    width: 378px;
+    height: 56px;
+  }
+}
 
 .subscribe__text {
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: -0.02em;
   text-align: center;
   color: #fff;
   margin-top: 24px;
-  margin-right: 4.5px;
-  margin-left: 4.5px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 375px) {
+  .subscribe__text {
+    width: 326px;
+    height: 108px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscribe__text {
+    width: 467px;
+    height: 72px;
+  }
 }
 
 .button-subscribe {
@@ -88,13 +114,11 @@ img {
   background-color: orange;
   border: none;
 }
-
 @media screen and (min-width: 375px) {
   .button-subscribe {
     width: 128px;
     height: 41px;
-    margin-right: 103.5px;
-    margin-left: 103.5px;
+    margin: 0 auto;
     margin-top: 24px;
     font-size: 14px;
   }
@@ -103,8 +127,7 @@ img {
   .button-subscribe {
     width: 172px;
     height: 50px;
-    margin-right: 103.5px;
-    margin-left: 103.5px;
+    margin: 0 auto;
     margin-top: 24px;
     font-size: 18px;
   }
