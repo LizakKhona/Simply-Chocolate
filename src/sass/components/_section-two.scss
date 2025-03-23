@@ -2,8 +2,15 @@
   background-color: $darkblue-color;
   color: $white-color;
   padding: 20px 0px;
+  width: 375px;
+  height: 792px;
   @media screen and (min-width: 768px) {
+    width: 768px;
     height: 620px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    height: 344px;
   }
 }
 .benefits__icon {
@@ -15,11 +22,17 @@
 }
 .benefits__list {
   display: flex;
-  /*   align-items: center;
-  flex-direction: column; */
+  align-items: center;
+  flex-direction: column;
   row-gap: 38px;
   @media screen and (min-width: 768px) {
     flex-wrap: wrap;
+    align-items: normal;
+    flex-direction: row;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    align-items: center;
   }
 }
 .benefits__subtitle {
@@ -34,20 +47,51 @@
 }
 .benefits__item {
   padding-left: 16px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
 }
 .benefits__item:nth-child(1) {
   @media screen and (min-width: 768px) {
     flex-basis: 48%;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: auto;
+    padding-left: 34px;
   }
 }
 .benefits__item:nth-child(2) {
   @media screen and (min-width: 768px) {
     flex-basis: 48%;
   }
+  @media screen and (min-width: 1200px) {
+    flex-basis: auto;
+    padding-left: 54px;
+  }
 }
 .benefits__item:nth-child(3) {
   @media screen and (min-width: 768px) {
     flex-basis: 308px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+.benefits__stick {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    border: 1px solid $sec-two-color-grey;
+    width: 124px;
+    height: 0px;
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-right: 124px;
   }
 }
 .benefits__div {
