@@ -40,14 +40,13 @@ body {
 .title {
   display: flex;
   justify-content: center;
-  font-family: var(--font-family);
   font-weight: 600;
   font-size: 20px;
   line-height: 120%;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--chorniy);
+  color: #1e1823;
 }
 
 .title--orange {
@@ -55,7 +54,7 @@ body {
 }
 
 .container {
-  min-width: 375px;
+  width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -227,7 +226,7 @@ body {
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   width: 335px;
-  height: 364px;
+  padding: 32px 52px;
   margin-top: 32px;
   margin-bottom: 20px;
 }
@@ -236,7 +235,7 @@ body {
   display: block;
   width: 230px;
   height: 201px;
-  margin: 32px auto 8px;
+  margin: 0 auto 8px;
 }
 
 .products__title {
@@ -282,7 +281,7 @@ body {
   justify-content: center;
 }
 
-.carousel__img {
+.carousel__svg {
   width: 236px;
   height: 13px;
 }
@@ -292,22 +291,22 @@ body {
 }
 
 .carousel-control-prev {
-  position: fixed;
+  position: absolute;
   opacity: 0;
 }
 
 .carousel-control-prev:hover {
-  position: fixed;
+  position: absolute;
   opacity: 0;
 }
 
 .carousel-control-next {
-  position: fixed;
+  position: absolute;
   opacity: 0;
 }
 
 .carousel-control-next:hover {
-  position: fixed;
+  position: absolute;
   opacity: 0;
 }
 

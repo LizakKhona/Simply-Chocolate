@@ -5,17 +5,17 @@ body {
   font-weight: 400;
 }
 
+// СТИЛІ ЗАГОЛОВКУ
 .title {
   display: flex;
   justify-content: center;
-  font-family: var(--font-family);
   font-weight: 600;
   font-size: 20px;
   line-height: 120%;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--chorniy);
+  color: $darkblue-color;
 }
 
 .title--orange {

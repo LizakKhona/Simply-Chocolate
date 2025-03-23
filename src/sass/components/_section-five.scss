@@ -14,7 +14,7 @@
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
     width: 335px;
-    height: 364px;
+    padding: 32px 52px;
     margin-top: 32px;
     margin-bottom: 20px;
 }
@@ -23,7 +23,7 @@
     display: block;
     width: 230px;
     height: 201px;
-    margin: 32px auto 8px;
+    margin: 0 auto 8px
 }
 
 .products__title {
@@ -69,7 +69,7 @@
     justify-content: center;
 }
 
-.carousel__img {
+.carousel__svg {
     width: 236px;
     height: 13px;
 }
@@ -83,21 +83,21 @@
 // carousel button
 
 .carousel-control-prev {
-    position: fixed;
+    position: absolute;
     opacity: 0;
 }
 
 .carousel-control-prev:hover {
-    position: fixed;
+    position: absolute;
     opacity: 0;
 }
 
 .carousel-control-next {
-    position: fixed;
+    position: absolute;
     opacity: 0;
 }
 
 .carousel-control-next:hover {
-    position: fixed;
+    position: absolute;
     opacity: 0;
 }
