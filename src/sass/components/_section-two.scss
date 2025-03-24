@@ -4,11 +4,14 @@
   padding: 20px 0px;
   width: 375px;
   height: 792px;
+  margin: 0 auto;
   @media screen and (min-width: 768px) {
+    padding: 50px;
     width: 768px;
     height: 620px;
   }
   @media screen and (min-width: 1200px) {
+    padding: 50px;
     width: 1200px;
     height: 344px;
   }
@@ -21,16 +24,21 @@
   padding: 15px; */
 }
 .benefits__list {
+  width: 1100px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   flex-direction: column;
   row-gap: 38px;
   @media screen and (min-width: 768px) {
+    column-gap: 60px;
+    width: 704px;
     flex-wrap: wrap;
     align-items: normal;
     flex-direction: row;
   }
   @media screen and (min-width: 1200px) {
+    width: 1100px;
     flex-wrap: nowrap;
     align-items: center;
   }
@@ -45,42 +53,50 @@
 .benefits__text {
   color: $sec-two-color-grey;
 }
-.benefits__item {
-  padding-left: 16px;
-  @media screen and (min-width: 1200px) {
-    padding-top: 25px;
-    padding-bottom: 50px;
-  }
-}
+ .benefits__item {
+  display: flex;
+  align-items: center;
+   @media screen and (min-width: 768px) {
+    width: 308px;
+   }
+ }
 .benefits__item:nth-child(1) {
   @media screen and (min-width: 768px) {
-    flex-basis: 48%;
+    // flex-basis: 48%;
   }
   @media screen and (min-width: 1200px) {
-    flex-basis: auto;
-    padding-left: 34px;
+    // flex-basis: auto;
+    // padding-left: 34px;
   }
 }
 .benefits__item:nth-child(2) {
   @media screen and (min-width: 768px) {
-    flex-basis: 48%;
+    // flex-basis: 48%;
   }
   @media screen and (min-width: 1200px) {
-    flex-basis: auto;
-    padding-left: 54px;
+    // flex-basis: auto;
+    // padding-left: 54px;
   }
 }
 .benefits__item:nth-child(3) {
   @media screen and (min-width: 768px) {
-    flex-basis: 308px;
+    // flex-basis: 308px;
   }
   @media screen and (min-width: 1200px) {
-    flex-basis: auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    // flex-basis: auto;
+    // padding-left: 30px;
+    // padding-right: 30px;
   }
 }
-.benefits__stick {
+.benefits__text::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 124px;
+  background-color: $sec-two-color-grey;
+  margin-left: 18px;
+}
+/* .benefits__stick {
   display: none;
   @media screen and (min-width: 1200px) {
     border: 1px solid $sec-two-color-grey;
@@ -93,7 +109,7 @@
     position: relative;
     padding-right: 124px;
   }
-}
+} */
 .benefits__div {
   width: 62px;
   height: 62px;
