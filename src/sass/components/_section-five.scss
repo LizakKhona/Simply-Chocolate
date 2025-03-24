@@ -1,0 +1,103 @@
+.products {
+    padding-top: 72px;
+    background-color: $white-color;
+    position: relative;
+}
+
+.products__list {
+    display: flex;
+    column-gap: 18px;
+}
+
+.products__item {
+    background: #fff;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    width: 335px;
+    padding: 32px 52px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+
+.products__img {
+    display: block;
+    width: 230px;
+    height: 201px;
+    margin: 0 auto 8px
+}
+
+.products__title {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: $black-color;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.products__name {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: rgba(17, 17, 17, 0.7);
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.products__price {
+    font-family: $font-family;
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    color: $black-color;
+    text-align: center;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+    padding: 8px 20px;
+    margin: 0 auto;
+    width: 94px;
+    margin-bottom: 32px;
+}
+
+.carousel__idicator {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel__svg {
+    width: 236px;
+    height: 13px;
+}
+
+// DESKTOP
+
+.carousel__desktop {
+    display: none;
+}
+
+// carousel button
+
+.carousel-control-prev {
+    position: absolute;
+    opacity: 0;
+}
+
+.carousel-control-prev:hover {
+    position: absolute;
+    opacity: 0;
+}
+
+.carousel-control-next {
+    position: absolute;
+    opacity: 0;
+}
+
+.carousel-control-next:hover {
+    position: absolute;
+    opacity: 0;
+}
