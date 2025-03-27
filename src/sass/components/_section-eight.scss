@@ -42,12 +42,10 @@
 
   @media screen and (min-width: 375px) {
     width: 326px;
-    height: 108px;
   }
 
   @media screen and (min-width: 768px) {
     width: 467px;
-    height: 72px;
   }
 }
 
@@ -55,11 +53,13 @@
   // font-family: $font-family;
   font-weight: 600;
   color: #fff;
-  border-radius: 45px 45px;
+  border-radius: 100px;
   background-color: orange;
   border: none;
+  
 
   @media screen and (min-width: 375px) {
+    display: block;
     width: 128px;
     height: 41px;
     margin: 0 auto;
@@ -70,8 +70,6 @@
   @media screen and (min-width: 768px) {
     width: 172px;
     height: 50px;
-    margin: 0 auto;
-    margin-top: 24px;
     font-size: 18px;
   }
 }

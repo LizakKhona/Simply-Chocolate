@@ -97,25 +97,24 @@ img {
 @media screen and (min-width: 375px) {
   .subscribe__text {
     width: 326px;
-    height: 108px;
   }
 }
 @media screen and (min-width: 768px) {
   .subscribe__text {
     width: 467px;
-    height: 72px;
   }
 }
 
 .button-subscribe {
   font-weight: 600;
   color: #fff;
-  border-radius: 45px 45px;
+  border-radius: 100px;
   background-color: orange;
   border: none;
 }
 @media screen and (min-width: 375px) {
   .button-subscribe {
+    display: block;
     width: 128px;
     height: 41px;
     margin: 0 auto;
@@ -127,8 +126,6 @@ img {
   .button-subscribe {
     width: 172px;
     height: 50px;
-    margin: 0 auto;
-    margin-top: 24px;
     font-size: 18px;
   }
 }/*# sourceMappingURL=index.css.map */
