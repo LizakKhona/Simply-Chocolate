@@ -373,13 +373,14 @@ body {
 
 .fans {
   padding-top: 72px;
+  padding-bottom: 72px;
   background-color: #fafafa;
 }
 
 .fans__item {
   position: relative;
-  margin-top: 98px;
-  height: 200px;
+  margin-top: 74px;
+  padding: 56px 18px 42px;
   background-color: #fff;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
@@ -397,7 +398,6 @@ body {
 }
 
 .fans__name {
-  margin-top: 56px;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
@@ -407,11 +407,8 @@ body {
 
 .fans__review {
   width: 299px;
-  margin: 24px auto 42px;
-  font-weight: 400;
-  font-size: 14px;
+  margin: 24px auto 0;
   line-height: 1.29;
-  letter-spacing: -0.02em;
   text-align: center;
   color: rgba(17, 17, 17, 0.7);
 }
@@ -425,7 +422,6 @@ body {
   border-radius: 100px;
   color: #111;
   font-weight: 600;
-  font-size: 14px;
   text-align: center;
 }
 
