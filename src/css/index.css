@@ -339,7 +339,7 @@ body {
 }
 
 .carousel__svg {
-  width: 236px;
+  margin-top: 20px;
   height: 13px;
 }
 
@@ -365,6 +365,64 @@ body {
 .carousel-control-next:hover {
   position: absolute;
   opacity: 0;
+}
+
+.fans__desktop {
+  display: none;
+}
+
+.fans {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background-color: #fafafa;
+}
+
+.fans__item {
+  position: relative;
+  margin-top: 74px;
+  padding: 56px 18px 42px;
+  background-color: #fff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
+
+.fans__img {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  top: -40;
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+}
+
+.fans__name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #111;
+  text-align: center;
+}
+
+.fans__review {
+  width: 299px;
+  margin: 24px auto 0;
+  line-height: 1.29;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.fans__button {
+  display: block;
+  width: 165px;
+  margin: 32px auto 0;
+  padding: 12px 28px;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  color: #111;
+  font-weight: 600;
+  text-align: center;
 }
 
 .footer {
