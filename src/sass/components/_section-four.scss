@@ -1,0 +1,45 @@
+.howitsmade{
+    background-color: #F5F4F4;
+}
+.howitsmade__recipe{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+}
+.howitsmade__iframe{
+    margin-bottom: 40px;
+}
+.iframe{
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+}
+.howitsmade__gallery{
+    width: 307px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 20px 14px;
+}
+.howitsmade__heading {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--chorniy);
+    line-height: 1.33;
+}
+
+.howitsmade__list {
+    width: 243px;
+    margin: 0 auto;
+}
+
+.howitsmade__item {
+    margin-bottom: 18px;
+    list-style: disc;
+}
+
+.howitsmade__text {
+    font-family: var(--font-family);
+    line-height: 1.29;
+    color: var(--chorniy);
+}
