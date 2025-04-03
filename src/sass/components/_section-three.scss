@@ -3,78 +3,147 @@
   padding-bottom: 128px;
 }
 .components__title {
+  justify-content: center;
+  font-family: $font-family;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
   color: $black-color;
-}
-.components__span {
+  display: block;
+  width: 283px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.17;
+    width: 411px;
+  }
+.title--orange{
   color: $orange-color;
 }
+}
 .components__text {
-  margin-bottom: 32px;
-  margin-top: 24px;
+  width: 335px;
+  margin: 24px auto 32px;
+  font-family: $font-family;
   line-height: 1.29;
   text-align: center;
   color: $black-color;
+
+  @media screen and (min-width: 768px) {
+    width: 486px;
+    font-weight: 400;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 .ingredients {
   flex-direction: column;
   display: flex;
   row-gap: 20px;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    column-gap: 32px;
+    row-gap: 32px;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    column-gap: 19px;
+    flex-wrap: nowrap;
+  }
 }
 .ingredients__item {
   position: relative;
+  overflow: hidden;
   width: 100%;
   height: 270px;
+  background-size: 224px 171px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-y: 28px;
+  background-position-x: center;
   border-radius: 15px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-size: 224px 171px;
+    background-position-y: 28px;
+    background-position-x: center;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    background-size: 206px 160px;
+    flex-basis: calc((100% - 57px) / 3);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-size: 206px 160px;
+    }
+  }
+&:hover .overlay,
+&:focus .overlay {
+  transform: translate(0);
+}
 }
 .ingredients__item:nth-child(1) {
   background-color: $orange-color;
   background-image: url(../images/choco-milk-sec2-1x-desktop-min.png);
-  @media (min-device-pixel-ratio:2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url(../images/choco-milk-sec2-2x-desktop-min.png);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    order: 1;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/choco-milk-sec2-2x-desktop-min.png);
+    }
   }
 }
 .ingredients__item:nth-child(2) {
-  background-color: $white-color;
+  background-color: #fff;
   border: 1px solid $orange-color;
   background-image: url(../images/milk-sec3-1x-desktop-min.png);
-  @media (min-device-pixel-ratio:2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url(../images/milk-sec3-2x-desktop-min.png);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    order: 3;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/milk-sec3-2x-desktop-min.png);
+    }
   }
 }
 .ingredients__item:nth-child(3) {
   background-color: $darkblue-color;
   background-image: url(../images/nuts-sec3-1x-desktop-min.png);
-  @media (min-device-pixel-ratio:2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url(../images/nuts-sec3-2x-desktop-min.png);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    order: 4;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/nuts-sec3-2x-desktop-min.png);
+    }
   }
 }
 .ingredients__item:nth-child(4) {
-  background-color: $white-color;
+  background-color: #fff;
   background-image: url(../images/semi-sw-choco-sec3-1x-desktop-min.png);
   border: 1px solid $orange-color;
-  @media (min-device-pixel-ratio:2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url(../images/semi-sw-choco-sec3-2x-desktop-min.png);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    order: 2;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/semi-sw-choco-sec3-2x-desktop-min.png);
+    }
   }
 }
 .ingredients__name {
+  font-size: 14px;
   position: absolute;
+  font-family: $font-family;
   font-weight: 600;
   line-height: 1.29;
   text-transform: uppercase;
@@ -85,5 +154,65 @@
   color: $black-color;
 }
 .ingredients__name--white {
-  color: $white-color;
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  transform: translateX(-100%);
+  padding: 28px;
+
+  transition: transform 400ms;
+}
+.ingredients__item:hover .overlay,
+.ingredients__item:focus .overlay {
+  transform: translate(0);
+}
+.overlay__list {
+  display: flex;
+  column-gap: 6px;
+  margin: 8px 0 14px;
+}
+.overlay__title {
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: $black-color;
+  @media screen and (min-width:1200px){
+    font-size: 16px;
+  }
+}
+.overlay__button {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #fff;
+  border-radius: 35px;
+  padding: 6px 16px;
+  text-align: center;
+}
+.overlay__button--orange {
+  background-color: $orange-color;
+  color: #fff;
+}
+.overlay__button--white {
+  background-color: #fff;
+  color: #111;
+  border: 1px solid $orange-color;
+}
+.overlay__text {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: $black-color;
 }
