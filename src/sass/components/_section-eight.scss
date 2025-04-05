@@ -11,25 +11,25 @@
 
 .subscribe__title {
   font-weight: 600;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.48px;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
+  padding-bottom: 24px;
+ margin: 0 auto;
 
   @media screen and (min-width: 375px) {
     font-size: 20px;
-    margin: 0 auto;
     line-height: 1.2;
     width: 291px;
-    height: 48px;
+    height: 72px;
   }
 
   @media screen and (min-width: 768px) {
     font-size: 24px;
-    margin: 0 auto;
     line-height: 1.17;
-    width: 378px;
-    height: 56px;
+    width: 370px;
+    height: 80px;
   }
 }
 
@@ -37,7 +37,6 @@
   // font-family: $font-family;
   text-align: center;
   color: #fff;
-  margin-top: 24px;
   margin: 0 auto;
 
   @media screen and (min-width: 375px) {
@@ -56,7 +55,6 @@
   border-radius: 100px;
   background-color: orange;
   border: none;
-  
 
   @media screen and (min-width: 375px) {
     display: block;

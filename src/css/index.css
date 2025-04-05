@@ -64,34 +64,33 @@ img {
 
 .subscribe__title {
   font-weight: 600;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.48px;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
+  padding-bottom: 24px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 375px) {
   .subscribe__title {
     font-size: 20px;
-    margin: 0 auto;
     line-height: 1.2;
     width: 291px;
-    height: 48px;
+    height: 72px;
   }
 }
 @media screen and (min-width: 768px) {
   .subscribe__title {
     font-size: 24px;
-    margin: 0 auto;
     line-height: 1.17;
-    width: 378px;
-    height: 56px;
+    width: 370px;
+    height: 80px;
   }
 }
 
 .subscribe__text {
   text-align: center;
   color: #fff;
-  margin-top: 24px;
   margin: 0 auto;
 }
 @media screen and (min-width: 375px) {
