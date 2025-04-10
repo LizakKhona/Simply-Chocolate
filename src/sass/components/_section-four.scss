@@ -3,19 +3,15 @@
 }
 .howitsmade__recipe{
     display: flex;
-    flex-direction: column;
-    display: flex;
-}
-.howitsmade__iframe{
-    margin-bottom: 40px;
+    row-gap: 20px;
 }
 .iframe{
-    width: 100%;
+    width: 335px;
     height: 500px;
     border-radius: 15px;
 }
 .howitsmade__gallery{
-    width: 307px;
+    width: 335px;
     margin: 0 auto;
     border-radius: 15px;
     background-color: #fff;
@@ -24,22 +20,21 @@
 .howitsmade__heading {
     font-size: 18px;
     font-weight: 600;
-    color: var(--chorniy);
+    $black-color: var(--chorniy);
     line-height: 1.33;
 }
 
 .howitsmade__list {
-    width: 243px;
+    padding-left: 14px;
     margin: 0 auto;
 }
 
 .howitsmade__item {
     margin-bottom: 18px;
-    list-style: disc;
+    list-style: circle;
 }
-
+.howitsmade__item:nth-child(2)
 .howitsmade__text {
-    font-family: var(--font-family);
     line-height: 1.29;
-    color: var(--chorniy);
+    $black-color: var(--chorniy);
 }
