@@ -308,6 +308,7 @@ body {
     margin: 0 auto;
   }
 }
+
 .howitsmade__gallery {
   width: 335px;
   margin: 0 auto;
@@ -318,7 +319,7 @@ body {
 @media screen and (min-width: 768px) {
   .howitsmade__gallery {
     width: 614px;
-    padding: 32px;
+    padding: 32px 70px 32px 32px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -333,6 +334,7 @@ body {
   font-weight: 600;
   color: #111;
   line-height: 1.33;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .howitsmade__heading {
@@ -347,12 +349,15 @@ body {
 }
 
 .howitsmade__item {
-  margin-bottom: 18px;
   list-style: disc;
 }
+
+.howitsmade__item:nth-child(n+2) {
+  margin-top: 18px;
+}
 @media screen and (min-width: 1200px) {
-  .howitsmade__item {
-    margin-bottom: 24px;
+  .howitsmade__item:nth-child(n+2) {
+    margin-top: 24px;
   }
 }
 

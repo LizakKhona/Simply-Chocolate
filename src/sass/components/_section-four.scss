@@ -21,8 +21,6 @@
             height: 400px;
             margin: 0 auto;
         }
-    
-        @media screen and (min-width:1200px) {}
 }
 
 .howitsmade__gallery {
@@ -33,19 +31,19 @@
     padding: 20px 14px;
     @media screen and (min-width:768px) {
             width: 614px;
-            padding: 32px;
+            padding: 32px 70px 32px 32px;
         }
     @media screen and (min-width:1200px) {
             width: 516px;
             padding: 32px 32px 34px 32px;
         }
 }
-
 .howitsmade__heading {
     font-size: 18px;
     font-weight: 600;
     color: $black-color;
     line-height: 1.33;
+    margin-bottom: 20px;
         @media screen and (min-width:768px) {
                 width: 350px;
                 margin-bottom: 28px;
@@ -56,11 +54,13 @@
     margin: 0 auto;
 }
 .howitsmade__item {
-    margin-bottom: 18px;
     list-style: disc;
-        @media screen and (min-width:1200px) {
-                margin-bottom: 24px;
-            }
+}
+.howitsmade__item:nth-child(n+2) {
+    margin-top: 18px;
+    @media screen and (min-width:1200px) {
+        margin-top: 24px;
+    }
 }
 .howitsmade__text {
     line-height: 1.29;
