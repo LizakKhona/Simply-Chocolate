@@ -428,29 +428,41 @@ body {
 .subscribe {
   background-image: url(../images/choco-bg-sec8-1x-desktop-min.png);
   background-repeat: no-repeat;
+  background-position: center;
 }
 @media screen and (min-width: 375px) {
   .subscribe {
-    padding: 62px 20px;
+    padding: 62px 0;
+    max-width: 375px;
+    margin: 0 auto;
+    height: 370px;
   }
 }
 @media screen and (min-width: 768px) {
   .subscribe {
-    padding: 72px 150px;
+    background-size: 768px 370px;
+    padding: 72px;
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    background-size: 1200px 370px;
+    max-width: 1200px;
   }
 }
 
-.subscribe__title {
+.title {
   font-weight: 600;
   letter-spacing: 0.48px;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
   margin: 0 auto;
 }
 @media screen and (min-width: 375px) {
-  .subscribe__title {
+  .title {
     font-size: 20px;
     line-height: 1.2;
     width: 291px;
@@ -458,7 +470,7 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .subscribe__title {
+  .title {
     font-size: 24px;
     line-height: 1.17;
     width: 370px;
@@ -474,6 +486,8 @@ body {
 @media screen and (min-width: 375px) {
   .subscribe__text {
     width: 326px;
+    font-size: 14px;
+    line-height: 1.29;
   }
 }
 @media screen and (min-width: 768px) {
@@ -507,7 +521,7 @@ body {
   }
 }
 
-.backdrop {
+.subscribe__backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -517,12 +531,12 @@ body {
   opacity: 1;
 }
 
-.backdrop.is-hidden {
+.subscribe__backdrop.subscribe__is-hidden {
   opacity: 0;
   pointer-events: none;
 }
 
-.modal {
+.subscribe__modal {
   position: absolute;
   top: 50%;
   left: 50%;
