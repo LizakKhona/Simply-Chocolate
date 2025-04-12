@@ -1,0 +1,68 @@
+.howitsmade {
+    background-color: #F5F4F4;
+}
+
+.howitsmade__recipe {
+    display: flex;
+    flex-direction: column;
+        row-gap: 20px;
+        @media screen and (min-width:1200px) {
+            flex-direction: row;
+            column-gap: 20px;
+        }
+}
+
+.iframe {
+    width: 335px;
+    height: 500px;
+    border-radius: 15px;
+    @media screen and (min-width:768px) {
+            width: 614px;
+            height: 400px;
+            margin: 0 auto;
+        }
+    
+        @media screen and (min-width:1200px) {}
+}
+
+.howitsmade__gallery {
+    width: 335px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 20px 14px;
+    @media screen and (min-width:768px) {
+            width: 614px;
+            padding: 32px;
+        }
+    @media screen and (min-width:1200px) {
+            width: 516px;
+            padding: 32px 32px 34px 32px;
+        }
+}
+
+.howitsmade__heading {
+    font-size: 18px;
+    font-weight: 600;
+    color: $black-color;
+    line-height: 1.33;
+        @media screen and (min-width:768px) {
+                width: 350px;
+                margin-bottom: 28px;
+            }
+}
+.howitsmade__list {
+    padding-left: 14px;
+    margin: 0 auto;
+}
+.howitsmade__item {
+    margin-bottom: 18px;
+    list-style: disc;
+        @media screen and (min-width:1200px) {
+                margin-bottom: 24px;
+            }
+}
+.howitsmade__text {
+    line-height: 1.29;
+    color: $black-color;
+}
