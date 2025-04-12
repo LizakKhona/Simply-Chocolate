@@ -7,24 +7,25 @@ body {
 
 // СТИЛІ ЗАГОЛОВКУ
 .title {
-  display: flex;
-  justify-content: center;
-  font-family: var(--font-family);
+  font-family: $font-family;
   font-weight: 600;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--chorniy);
+  color: $black-color;
   @media screen and (min-width:768px) {
-    margin-bottom: 50px;
-  }
-  @media screen and (min-width:1200px) {
-
+    font-size: 24px;
+    line-height: 1.17;
   }
 }
-
+.title:not(.components__title) {
+  margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }  
+}
 .title--orange {
   color: #fd9222;
 }

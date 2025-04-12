@@ -38,22 +38,31 @@ body {
 }
 
 .title {
-  display: flex;
-  justify-content: center;
-  font-family: var(--font-family);
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--chorniy);
+  color: #111;
 }
 @media screen and (min-width: 768px) {
   .title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.title:not(.components__title) {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .title:not(.components__title) {
     margin-bottom: 50px;
   }
 }
+
 .title--orange {
   color: #fd9222;
 }
@@ -279,6 +288,13 @@ body {
   flex-direction: column;
   row-gap: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .howitsmade__recipe {
+    flex-direction: row;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
 
 .iframe {
   width: 335px;
@@ -299,11 +315,30 @@ body {
   background-color: #fff;
   padding: 20px 14px;
 }
+@media screen and (min-width: 768px) {
+  .howitsmade__gallery {
+    width: 614px;
+    padding: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .howitsmade__gallery {
+    width: 516px;
+    padding: 32px 32px 34px 32px;
+  }
+}
 
 .howitsmade__heading {
   font-size: 18px;
   font-weight: 600;
+  color: #111;
   line-height: 1.33;
+}
+@media screen and (min-width: 768px) {
+  .howitsmade__heading {
+    width: 350px;
+    margin-bottom: 28px;
+  }
 }
 
 .howitsmade__list {
@@ -313,11 +348,17 @@ body {
 
 .howitsmade__item {
   margin-bottom: 18px;
-  list-style: circle;
+  list-style: disc;
+}
+@media screen and (min-width: 1200px) {
+  .howitsmade__item {
+    margin-bottom: 24px;
+  }
 }
 
 .howitsmade__text {
   line-height: 1.29;
+  color: #111;
 }
 
 .products {
