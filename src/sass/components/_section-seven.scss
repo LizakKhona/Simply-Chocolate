@@ -33,6 +33,16 @@
     padding-top: 72px;
     padding-bottom: 72px;
     background-color: $white-color;
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
 }
 
 .fans__list {
@@ -41,11 +51,15 @@
         justify-content: center;
         column-gap: 16px;
     }
+
+    @media screen and (min-width:1200px) {
+        column-gap: 28px;
+    }
 }
 
 .fans__item {
     position: relative;
-    margin-top: 74px;
+    margin-top: 42px;
     padding: 56px 18px 42px;
     background-color: #fff;
     border: 1px solid rgba(17, 17, 17, 0.1);
@@ -69,6 +83,7 @@
     margin: 0 auto;
     width: 80px;
     height: 80px;
+    border-radius: 50%;
 }
 
 .fans__name {
@@ -113,13 +128,15 @@
     text-align: center;
 
     @media screen and (min-width:768px) {
+        width: 222px;
         margin-top: 50px;
+        padding: 14px 40px;
     }
 }
 
 // СТИЛІ МОДАЛЬНОГО ВІКНА 
 
-.backdrop {
+.review__backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -129,7 +146,7 @@
     opacity: 3;
 }
 
-.backdrop.is-hidden {
+.review__backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
 }
@@ -152,11 +169,10 @@
 
 .review__colse-btn {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 14;
+    top: 14;
     background-color: $white-color;
     padding: 0;
-    margin: 14px;
     border: none;
     border-radius: 50px;
 }
