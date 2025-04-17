@@ -361,26 +361,37 @@
         <!-- МОДАЛЬНЕ ВІКНО -->
         <div class="review__backdrop is-hidden" data-modal>
             <div class="review__modal">
-                <button class="review__colse-btn" data-modal-close>
+                <button type="button" class="review__colse-btn" data-modal-close>
                     <svg width="24" height="24" class="close-btn__svg">
                         <use href="../icons/sprite.svg#icon-x"></use>
                     </svg>
                 </button>
                 <p class="title review__text">
-                    leave a review about <span class="title--orange"> our chocolate</span>
+                    leave a review <br> about <span class="title--orange"> our chocolate</span>
                 </p>
-                <!-- NAME -->
                 <form>
-                    <label class="review__label" for="username"></label>
-                    <input type="text" id="username" class="review__data" name="username" placeholder="Name">
+                    <!-- NAME -->
+                    <div class="review__container">
+                        <label class="review__label" for="username"></label>
+                        <input type="text" id="username" class="review__data" name="username" placeholder="Name">
+                    </div>
                     <!-- EMAIL -->
-                    <label class="review__label" for="email"></label>
-                    <input type="email" id="email" class="review__data" name="email" placeholder="Enter your email">
+                    <div class="review__container">
+                        <label class="review__label" for="email"></label>
+                        <input type="email" id="email" class="review__data" name="email" placeholder="Enter your email">
+                    </div>
                     <!-- PHONE NUMBER -->
-                    <label class="review__label" for="number">+380</label>
-                    <input type="number" id="number" class="review__data review__data--number" name="number"
-                        placeholder="Phone number">
-
+                    <div class="review__container">
+                        <label class="review__label review__label--number" for="number">+380</label>
+                        <input type="number" id="number" class="review__data review__data--number" name="number"
+                            placeholder="Phone number">
+                    </div>
+                    <!-- COMMENT -->
+                    <div class="review__container">
+                        <label class="review__label" for="comment"></label>
+                        <textarea id="comment" class="review__data" name="comment" placeholder="Enter text"></textarea>
+                    </div>
+                    <!-- КНОПКА -->
                     <button class="review__btn" type="submit">Send</button>
                 </form>
                 <!--  -->
