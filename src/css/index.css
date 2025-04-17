@@ -529,6 +529,9 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .subscribe__backdrop.subscribe__is-hidden {
@@ -540,11 +543,38 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 400px;
-  min-height: 300px;
   padding: 15px;
-  background-color: skyblue;
+  background-color: white;
   transform: translate(-50%, -50%);
+  background-image: url(../images/choco-sec8-ad-1x-desktop-min.jpg);
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 375px) {
+  .subscribe__modal {
+    background-size: 311px 169px;
+    width: 311px;
+    height: 350px;
+    max-width: 100%;
+  }
+}
+
+.subscribe__modal-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: black;
+  margin-top: 201px;
+}
+
+.subscribe__title-span {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: orange;
 }
 
 .footer {
