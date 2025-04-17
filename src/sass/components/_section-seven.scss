@@ -1,4 +1,31 @@
+// MOBILE
+.fans__mobile {
+    display: none;
+
+    @media screen and (min-width:375px) and (max-width:767px) {
+        display: block;
+    }
+}
+
+// TABLET 
+.fans__tablet {
+    display: none;
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        display: block;
+    }
+}
+
+// DESKTOP
 .fans__desktop {
+    display: none;
+
+    @media screen and (min-width:1200px) {
+        display: block;
+    }
+}
+
+.carousel__indicators {
     display: none;
 }
 
@@ -6,15 +33,45 @@
     padding-top: 72px;
     padding-bottom: 72px;
     background-color: $white-color;
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
+}
+
+.fans__list {
+    @media screen and (min-width:768px) {
+        display: flex;
+        justify-content: center;
+        column-gap: 16px;
+    }
+
+    @media screen and (min-width:1200px) {
+        column-gap: 28px;
+    }
 }
 
 .fans__item {
     position: relative;
-    margin-top: 74px;
+    margin-top: 42px;
     padding: 56px 18px 42px;
     background-color: #fff;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
+
+    @media screen and (min-width:768px) {
+        padding: 56px 16px 26px;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding: 56px 24px 24px;
+    }
 }
 
 .fans__img {
@@ -26,6 +83,7 @@
     margin: 0 auto;
     width: 80px;
     height: 80px;
+    border-radius: 50%;
 }
 
 .fans__name {
@@ -42,6 +100,19 @@
     line-height: 1.29;
     text-align: center;
     color: rgba(17, 17, 17, 0.7);
+
+    @media screen and (min-width:768px) {
+        width: 312px;
+    }
+}
+
+.carousel__svg {
+    width: 107px;
+    height: 13px;
+
+    @media screen and (min-width:768px) {
+        margin-top: 31px;
+    }
 }
 
 .fans__button {
@@ -52,6 +123,104 @@
     border: 1px solid $orange-color;
     border-radius: 100px;
     color: $black-color;
+    background-color: $white-color;
     font-weight: 600;
     text-align: center;
+
+    @media screen and (min-width:768px) {
+        width: 222px;
+        margin-top: 50px;
+        padding: 14px 40px;
+    }
+}
+
+// СТИЛІ МОДАЛЬНОГО ВІКНА 
+
+.review__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 3;
+}
+
+.review__backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.review__modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 311px;
+    padding: 32px 24px;
+    border-radius: 15px;
+    background-color: $white-color;
+    transform: translate(-50%, -50%);
+
+}
+
+.review__colse-btn {
+    position: absolute;
+    right: 14;
+    top: 14;
+    background-color: $white-color;
+    padding: 0;
+    border: none;
+    border-radius: 50px;
+}
+
+.close-btn__svg {
+    stroke: $black-color;
+}
+
+.review__text {
+    text-align: left;
+    width: 254px;
+    height: 48px;
+    margin-bottom: 32px;
+}
+
+.review__label {
+    font-weight: 500;
+    color: $black-color;
+}
+
+.review__label {
+    position: relative;
+    top: 32px;
+    right: 50px;
+}
+
+.review__data {
+    background-color: $white-color;
+    color: rgba(64, 64, 64, 0.3);
+    width: 263px;
+    height: 45px;
+    padding: 14px 18px;
+    margin-bottom: 14px;
+    border: 1.5px solid #eeeeee;
+    border-radius: 10px;
+}
+
+.review__data--number {
+    padding-left: 114px;
+}
+
+.review__btn {
+    background-color: $orange-color;
+    color: $white-color;
+    padding: 12px 28px;
+    width: 93px;
+    height: 41px;
+    border: none;
+    border-radius: 100px;
+    font-weight: 600;
 }
