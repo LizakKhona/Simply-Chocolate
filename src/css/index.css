@@ -515,6 +515,16 @@ body {
   height: 464px;
   border-radius: 15px;
 }
+@media screen and (min-width: 768px) {
+  .sweets-list__item {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sweets-list__item {
+    flex-basis: calc((100% - 32px) / 3);
+  }
+}
 
 .sellers-content {
   display: flex;
