@@ -1,4 +1,4 @@
-.hero {
+.hero{
   background-image: url(../images/choco-bg-sec1-desktop-1x-min.png);
   background-position: center;
   background-size: cover;
@@ -6,14 +6,14 @@
   width: 335px;
   height: 620px;
   border-radius: 30px;
-  margin: 0 auto;
-  margin-bottom: 72px;
+  margin: 0 auto 72px;
   position: relative;
-  
+  padding-top: 395px;
+
   @media screen and (min-width: 768px) {
     width: 704px;
     height: 890px;
-    padding-top: 54px;
+    padding-top: 671px;
     margin-bottom: 50px;
   }
 
@@ -22,30 +22,31 @@
     height: 600px;
     padding-top: 208px;
     margin-bottom: 63px;
-    position: relative;
+  }
+
+  .container{
+    @media screen and (min-width: 1200px) {
+      padding-top: 175px;
+    }
   }
 }
+
 .hero-bgc{
   @media screen and (min-width: 1200px) {
     position: absolute;
     background-color: $sec-two-color-grey;
     width: 1136px;
-    height: 119px;    
-  }
-}
-.hero .container{
-  @media screen and (min-width: 1200px) {
-    padding-top: 175px;
+    height: 119px;
   }
 }
 
-.hero__title {
+.hero__title{
   font-family: $font-family;
   font-weight: 500;
   letter-spacing: -0.03em;
   color: $white-color;
   font-size: 20px;
-  line-height: 1.20;
+  line-height: 1.2;
   width: 299px;
 
   @media screen and (min-width: 768px) {
@@ -55,11 +56,11 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 484px; 
+    width: 484px;
   }
 }
 
-.hero-actions {
+.hero-actions{
   @media screen and (min-width: 768px) {
     display: flex;
     column-gap: 135px;
@@ -70,19 +71,32 @@
   }
 }
 
-.actions {
+.actions{
   display: flex;
   column-gap: 14px;
   margin-top: 31px;
 
-  @media screen and (min-width: 768px),
-  (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    width: 341px;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 341px;
   }
 }
+.hero-actions{
+  @media screen and (min-width: 768px) {
+    display: flex;
+    column-gap: 135px;
+  }
 
-.actions__button--buynow {
-  font-family: var(--font-family);
+  @media screen and (min-width: 1200px) {
+    column-gap: 585px;
+  }
+}
+
+.actions__button--buynow{
+  font-family: $font-family;
   font-weight: 600;
   font-size: 14px;
   color: $white-color;
@@ -91,34 +105,41 @@
   background: $orange-color;
   border: 1px solid $orange-color;
   border-radius: 100px;
-  
 
-  @media screen and (min-width: 768px),
-  (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    width: 144px;
+    height: 45px;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 144px;
     height: 45px;
   }
 }
 
-.actions__button--howmade {
+.actions__button--howmade{
   font-family: $font-family;
   font-weight: 600;
   font-size: 14px;
   color: $white-color;
+  background: none;
   border: 1px solid $white-color;
   border-radius: 100px;
-  background: none;
   width: 159px;
   height: 41px;
 
-  @media screen and (min-width: 768px),
-  (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    width: 183px;
+    height: 45px;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 183px;
     height: 45px;
   }
 }
 
-.hero__scroll-link {
+.hero__scroll-link{
   font-family: $font-family;
   font-weight: 500;
   font-size: 12px;
@@ -131,18 +152,22 @@
   margin-top: 32px;
 }
 
-.hero__scroll-icon {
+.hero__scroll-icon{
   width: 16px;
   height: 16px;
 
-  @media screen and (min-width: 768px),
-  (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 22px;
     height: 22px;
   }
 }
 
-.icon-wrapper {
+.icon-wrapper{
   width: 28px;
   height: 28px;
   background-color: $white-color;
@@ -150,8 +175,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @media screen and (min-width: 768px),
-  (min-width: 1200px) {
+
+  @media screen and (min-width: 768px) {
+    width: 38px;
+    height: 38px;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 38px;
     height: 38px;
   }
