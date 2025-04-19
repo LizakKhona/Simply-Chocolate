@@ -1,47 +1,172 @@
-.hero{
+.hero {
   background-image: url(../images/choco-bg-sec1-desktop-1x-min.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 335px;
-  height: 620px;
   border-radius: 30px;
   margin: 0 auto 72px;
   position: relative;
   padding-top: 395px;
+  padding-bottom: 40px;
+  height: auto; 
 
   @media screen and (min-width: 768px) {
     width: 704px;
-    height: 890px;
     padding-top: 671px;
     margin-bottom: 50px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1136px;
-    height: 600px;
-    padding-top: 208px;
+    padding-top: 381px;
     margin-bottom: 63px;
   }
-
-  .container{
-    @media screen and (min-width: 1200px) {
-      padding-top: 175px;
-    }
-  }
 }
 
-.hero-bgc{
+.hero-bgc {
   @media screen and (min-width: 1200px) {
     position: absolute;
-    background-color: $sec-two-color-grey;
-    width: 1136px;
-    height: 119px;
+  background-color: $sec-two-color-grey;
+  width: 1136px;
+  height: 119px;
+  left: 0;
+  top: 208px
+  };
+}
+
+.hero__title {
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  color: $white-color;
+  font-size: 20px;
+  line-height: 1.2;
+  width: 299px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+    line-height: 1.21;
+    width: 484px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 484px;
+  }
+}
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 32px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    column-gap: 135px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    column-gap: 585px;
   }
 }
 
-.hero__title{
-  font-family: $font-family;
+.actions {
+  display: flex;
+  column-gap: 14px;
+  margin: 0; 
+}
+
+.actions__button {
+  font-weight: 600;
+  color: $white-color;
+  border-radius: 100px;
+  height: 41px;
+  border: 1px solid;
+
+  @media screen and (min-width: 768px) {
+    height: 45px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 45px;
+  }
+}
+
+.actions__button--buynow {
+  background: $orange-color;
+  border-color: $orange-color;
+  width: 120px;
+
+  @media screen and (min-width: 768px) {
+    width: 144px;
+  }
+}
+
+.actions__button--howmade {
+  background: none;
+  border-color: $white-color;
+  width: 159px;
+
+  @media screen and (min-width: 768px) {
+    width: 183px;
+  }
+}
+
+.hero__scroll-link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  color: $white-color;
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+}
+
+.icon-wrapper {
+  width: 28px;
+  height: 28px;
+  background-color: $white-color;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+.hero {
+  background-image: url(../images/choco-bg-sec1-desktop-1x-min.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 335px;
+  border-radius: 30px;
+  margin: 0 auto 72px;
+  position: relative;
+  padding-top: 395px;
+  padding-bottom: 40px;
+  height: auto; 
+
+  @media screen and (min-width: 768px) {
+    width: 704px;
+    padding-top: 671px;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1136px;
+    padding-top: 381px; 
+    margin-bottom: 63px;
+  }
+}
+
+.hero-bgc {
+  position: absolute;
+  background-color: $sec-two-color-grey;
+  width: 1136px;
+  height: 119px;
+  left: 0;
+  top: 208px;
+}
+
+.hero__title {
   font-weight: 500;
   letter-spacing: -0.03em;
   color: $white-color;
@@ -60,9 +185,14 @@
   }
 }
 
-.hero-actions{
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 32px;
+
   @media screen and (min-width: 768px) {
-    display: flex;
+    flex-direction: row;
     column-gap: 135px;
   }
 
@@ -71,76 +201,50 @@
   }
 }
 
-.actions{
+.actions {
   display: flex;
   column-gap: 14px;
-  margin-top: 31px;
+  margin: 0; 
 
-  @media screen and (min-width: 768px) {
-    width: 341px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 341px;
-  }
-}
-.hero-actions{
-  @media screen and (min-width: 768px) {
-    display: flex;
-    column-gap: 135px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    column-gap: 585px;
-  }
 }
 
-.actions__button--buynow{
-  font-family: $font-family;
+.actions__button {
   font-weight: 600;
-  font-size: 14px;
   color: $white-color;
-  width: 120px;
+  border-radius: 100px;
   height: 41px;
+  border: 1px solid;
+
+  @media screen and (min-width: 768px) {
+    height: 45px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 45px;
+  }
+}
+
+.actions__button--buynow {
   background: $orange-color;
-  border: 1px solid $orange-color;
-  border-radius: 100px;
+  border-color: $orange-color;
+  width: 120px;
 
   @media screen and (min-width: 768px) {
     width: 144px;
-    height: 45px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 144px;
-    height: 45px;
   }
 }
 
-.actions__button--howmade{
-  font-family: $font-family;
-  font-weight: 600;
-  font-size: 14px;
-  color: $white-color;
+.actions__button--howmade {
   background: none;
-  border: 1px solid $white-color;
-  border-radius: 100px;
+  border-color: $white-color;
   width: 159px;
-  height: 41px;
 
   @media screen and (min-width: 768px) {
     width: 183px;
-    height: 45px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 183px;
-    height: 45px;
   }
 }
 
-.hero__scroll-link{
-  font-family: $font-family;
+.hero__scroll-link {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
@@ -149,25 +253,9 @@
   display: flex;
   align-items: center;
   column-gap: 14px;
-  margin-top: 32px;
 }
 
-.hero__scroll-icon{
-  width: 16px;
-  height: 16px;
-
-  @media screen and (min-width: 768px) {
-    width: 22px;
-    height: 22px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 22px;
-    height: 22px;
-  }
-}
-
-.icon-wrapper{
+.icon-wrapper {
   width: 28px;
   height: 28px;
   background-color: $white-color;
@@ -180,9 +268,5 @@
     width: 38px;
     height: 38px;
   }
-
-  @media screen and (min-width: 1200px) {
-    width: 38px;
-    height: 38px;
-  }
+}
 }

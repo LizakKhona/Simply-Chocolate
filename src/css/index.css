@@ -94,16 +94,16 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   width: 335px;
-  height: 620px;
   border-radius: 30px;
   margin: 0 auto 72px;
   position: relative;
   padding-top: 395px;
+  padding-bottom: 40px;
+  height: auto;
 }
 @media screen and (min-width: 768px) {
   .hero {
     width: 704px;
-    height: 890px;
     padding-top: 671px;
     margin-bottom: 50px;
   }
@@ -111,14 +111,8 @@ body {
 @media screen and (min-width: 1200px) {
   .hero {
     width: 1136px;
-    height: 600px;
-    padding-top: 208px;
+    padding-top: 381px;
     margin-bottom: 63px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero .container {
-    padding-top: 175px;
   }
 }
 
@@ -128,11 +122,12 @@ body {
     background-color: #D9D9D9;
     width: 1136px;
     height: 119px;
+    left: 0;
+    top: 208px;
   }
 }
 
 .hero__title {
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   letter-spacing: -0.03em;
   color: #fafafa;
@@ -153,9 +148,15 @@ body {
   }
 }
 
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 32px;
+}
 @media screen and (min-width: 768px) {
   .hero-actions {
-    display: flex;
+    flex-direction: row;
     -moz-column-gap: 135px;
          column-gap: 135px;
   }
@@ -171,83 +172,50 @@ body {
   display: flex;
   -moz-column-gap: 14px;
        column-gap: 14px;
-  margin-top: 31px;
-}
-@media screen and (min-width: 768px) {
-  .actions {
-    width: 341px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .actions {
-    width: 341px;
-  }
+  margin: 0;
 }
 
+.actions__button {
+  font-weight: 600;
+  color: #fafafa;
+  border-radius: 100px;
+  height: 41px;
+  border: 1px solid;
+}
 @media screen and (min-width: 768px) {
-  .hero-actions {
-    display: flex;
-    -moz-column-gap: 135px;
-         column-gap: 135px;
+  .actions__button {
+    height: 45px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero-actions {
-    -moz-column-gap: 585px;
-         column-gap: 585px;
+  .actions__button {
+    height: 45px;
   }
 }
 
 .actions__button--buynow {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  color: #fafafa;
-  width: 120px;
-  height: 41px;
   background: #fd9222;
-  border: 1px solid #fd9222;
-  border-radius: 100px;
+  border-color: #fd9222;
+  width: 120px;
 }
 @media screen and (min-width: 768px) {
   .actions__button--buynow {
     width: 144px;
-    height: 45px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .actions__button--buynow {
-    width: 144px;
-    height: 45px;
   }
 }
 
 .actions__button--howmade {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  color: #fafafa;
   background: none;
-  border: 1px solid #fafafa;
-  border-radius: 100px;
+  border-color: #fafafa;
   width: 159px;
-  height: 41px;
 }
 @media screen and (min-width: 768px) {
   .actions__button--howmade {
     width: 183px;
-    height: 45px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .actions__button--howmade {
-    width: 183px;
-    height: 45px;
   }
 }
 
 .hero__scroll-link {
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
@@ -257,24 +225,6 @@ body {
   align-items: center;
   -moz-column-gap: 14px;
        column-gap: 14px;
-  margin-top: 32px;
-}
-
-.hero__scroll-icon {
-  width: 16px;
-  height: 16px;
-}
-@media screen and (min-width: 768px) {
-  .hero__scroll-icon {
-    width: 22px;
-    height: 22px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero__scroll-icon {
-    width: 22px;
-    height: 22px;
-  }
 }
 
 .icon-wrapper {
@@ -286,14 +236,145 @@ body {
   align-items: center;
   justify-content: center;
 }
+.icon-wrapper .hero {
+  background-image: url(../images/choco-bg-sec1-desktop-1x-min.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 335px;
+  border-radius: 30px;
+  margin: 0 auto 72px;
+  position: relative;
+  padding-top: 395px;
+  padding-bottom: 40px;
+  height: auto;
+}
 @media screen and (min-width: 768px) {
-  .icon-wrapper {
-    width: 38px;
-    height: 38px;
+  .icon-wrapper .hero {
+    width: 704px;
+    padding-top: 671px;
+    margin-bottom: 50px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .icon-wrapper {
+  .icon-wrapper .hero {
+    width: 1136px;
+    padding-top: 381px;
+    margin-bottom: 63px;
+  }
+}
+.icon-wrapper .hero-bgc {
+  position: absolute;
+  background-color: #D9D9D9;
+  width: 1136px;
+  height: 119px;
+  left: 0;
+  top: 208px;
+}
+.icon-wrapper .hero__title {
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  color: #fafafa;
+  font-size: 20px;
+  line-height: 1.2;
+  width: 299px;
+}
+@media screen and (min-width: 768px) {
+  .icon-wrapper .hero__title {
+    font-size: 28px;
+    line-height: 1.21;
+    width: 484px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .icon-wrapper .hero__title {
+    width: 484px;
+  }
+}
+.icon-wrapper .hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 32px;
+}
+@media screen and (min-width: 768px) {
+  .icon-wrapper .hero-actions {
+    flex-direction: row;
+    -moz-column-gap: 135px;
+         column-gap: 135px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .icon-wrapper .hero-actions {
+    -moz-column-gap: 585px;
+         column-gap: 585px;
+  }
+}
+.icon-wrapper .actions {
+  display: flex;
+  -moz-column-gap: 14px;
+       column-gap: 14px;
+  margin: 0;
+}
+.icon-wrapper .actions__button {
+  font-weight: 600;
+  color: #fafafa;
+  border-radius: 100px;
+  height: 41px;
+  border: 1px solid;
+}
+@media screen and (min-width: 768px) {
+  .icon-wrapper .actions__button {
+    height: 45px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .icon-wrapper .actions__button {
+    height: 45px;
+  }
+}
+.icon-wrapper .actions__button--buynow {
+  background: #fd9222;
+  border-color: #fd9222;
+  width: 120px;
+}
+@media screen and (min-width: 768px) {
+  .icon-wrapper .actions__button--buynow {
+    width: 144px;
+  }
+}
+.icon-wrapper .actions__button--howmade {
+  background: none;
+  border-color: #fafafa;
+  width: 159px;
+}
+@media screen and (min-width: 768px) {
+  .icon-wrapper .actions__button--howmade {
+    width: 183px;
+  }
+}
+.icon-wrapper .hero__scroll-link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  color: #fafafa;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 14px;
+       column-gap: 14px;
+}
+.icon-wrapper .icon-wrapper {
+  width: 28px;
+  height: 28px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .icon-wrapper .icon-wrapper {
     width: 38px;
     height: 38px;
   }
