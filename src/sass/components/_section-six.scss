@@ -1,0 +1,89 @@
+.sellers {
+  width: 375px;
+  padding-top: 72px;
+  margin: 0 auto;
+  background-color: $white-color;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-top: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-top: 128px;
+  }
+}
+.sweets-list{
+  display: flex;  
+  flex-direction: column;
+  row-gap: 16px;
+  align-items: center;
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+ flex-direction: row;
+ justify-content:center;
+ column-gap: 16px;
+ margin-bottom: 32px;
+
+  }
+ 
+  &__item:nth-child(3){
+
+    display: none;
+    @media screen and (min-width: 1200px) {
+  display: block;
+
+  }
+  }
+&__item {
+  width: 335px;
+  height: 464px;
+  border-radius: 15px;
+
+}
+
+}
+.sellers-content{
+display: flex;
+flex-direction: column;
+row-gap: 32px;
+@media screen and (min-width: 768px) {
+flex-direction: row;
+justify-content:center;
+column-gap: 236px;
+
+}
+@media screen and (min-width: 1200px){
+    column-gap: 567px;
+}
+}
+
+.sellers-content__text{
+    margin-top: 15px;
+line-height: 1.29;
+color: $black-color;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+        width: 306px;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    @media screen and (min-width: 1200px){
+        width: 407px;
+    }
+}
+.sellers-content__button{
+  width: 120px;
+  height: 50px;
+  border-radius: 100px;
+  background-color:#FD9222 ;
+  display: block;
+  margin: 0 auto;
+  padding: 12px 28px;
+border: none;
+color: white;
+@media screen and (min-width: 768px){
+    width: 162px;
+    padding: 14px 40px;
+
+}
+}
