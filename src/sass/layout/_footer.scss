@@ -2,33 +2,64 @@
   background-color: $darkblue-color;
   padding-top: 50px;
   padding-bottom: 50px;
+  min-width: 375px;
+  margin: 0 auto;
+  @media screen and (min-width:768px){
+    min-width: 768px;
+  }
+  @media screen and (min-width:1200px){
+    min-width: 1200px;
+  }
 }
 .wrapper {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    column-gap: 543px;
+  }
 }
 .footer__title {
-  width: 300px;
-  color: $white-color;
+  width: 256px;
+  font-family: $font-family;
+  color: #fff;
   font-weight: 500;
-  font-size: 28px;
-  line-height: 1.21;
-}
-.footer__span {
+  font-size: 24px;
+  line-height: 1.17;
+  @media screen and (min-width: 768px) {
+    width: 300px;
+    font-size: 28px;
+    line-height: 1.21;
+  }
+.footer__span{
   color: $orange-color;
+}
 }
 .information {
   display: flex;
-  justify-content: space-between;
+  column-gap: 113px;
   align-items: center;
+  align-items: start;
+  @media screen and (min-width: 768px) {
+    column-gap: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    column-gap: 63px;
+  }
 }
 .address__text {
   margin-bottom: 14px;
+  font-family: $font-family;
   font-weight: 500;
+  font-size: 14px;
   line-height: 1.29;
-  color: $white-color;
+  color: #fff;
+  font-style: normal;
 }
 .contacts::after {
   content: "";
@@ -40,25 +71,54 @@
 .contacts__link {
   display: block;
   margin-bottom: 4px;
+  font-family: $font-family;
+  font-size: 14px;
   line-height: 1.29;
-  color: $white-color;
+  color: #fff;
+  font-style: normal;
+  @media screen and (min-width:768px) {
+    font-weight: 400;
+  }
+}
+.contacts__link:hover,
+.contacts__link:focus{
+  color: $orange-color;
 }
 .socials {
   display: flex;
   column-gap: 14px;
+  @media screen and (min-width: 768px) {
+    column-gap: 18px;
+  }
 }
 .socials__svg {
   width: 22px;
   height: 22px;
+  fill: #fff;
+  
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }
 }
 .navigation {
   margin-top: 32px;
-  row-gap: 18px;
   display: flex;
+  row-gap: 18px;
   flex-direction: column;
+  @media screen and (min-width: 768px) {
+    margin-top: 24px;
+    flex-direction: row;
+    column-gap: 24px;
+  }
 }
 .navigation__link {
+  font-family: $font-family;
   font-weight: 500;
   line-height: 1.14;
-  color: $white-color;
+  color: #fff;
+}
+.navigation__link:hover,
+.navigation__link:focus{
+  color: $orange-color;
 }
