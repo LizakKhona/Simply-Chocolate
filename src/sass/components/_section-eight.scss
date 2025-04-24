@@ -126,6 +126,7 @@
 margin-top: 162px;
   display: flex;
   flex-wrap: wrap;
+
   @media screen and (min-width: 768px) {
   margin-top : 184px; 
   }
@@ -138,6 +139,7 @@ margin-top: 162px;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: black;
+  padding-top: 32px;
   @media screen and (min-width: 768px) {
     font-size: 24px;
     line-height: 1.17;
@@ -156,6 +158,10 @@ margin-top: 162px;
     font-size: 24px;
     line-height: 1.17;
   }
+}
+
+.subscribe__input-div {
+  margin-top: 24px;
 }
 
 
