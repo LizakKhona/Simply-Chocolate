@@ -133,8 +133,8 @@
 112C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\@parcel\package-manager\src\MockPackageInstaller.js133887757885902735 0
 71C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\parse-json133887757883111685 1
 51C:\Users\gresk\Documents\GitHb\Simply-Chocolate\src133889389065336813 1
-52C:\Users\gresk\Documents\GitHb\Simply-Chocolate\dist133889426869247385 1
-79C:\Users\gresk\Documents\GitHb\Simply-Chocolate\src\partials\section-eight.html133889424951700417 0
+52C:\Users\gresk\Documents\GitHb\Simply-Chocolate\dist133893780198345128 1
+79C:\Users\gresk\Documents\GitHb\Simply-Chocolate\src\partials\section-eight.html133893773643958857 0
 92C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\parcel-reporter-clean-dist\dist133887757886173472 1
 79C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\.package-lock.json133887757895030297 0
 76C:\Users\gresk\Documents\GitHb\Simply-Chocolate\src\sass\layout\_footer.scss133887729017095940 0
@@ -203,7 +203,7 @@
 95C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\css-tree\lib\syntax\scope\value.js133887757888376677 0
 72C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\lmdb\mod.ts133887757888522195 0
 84C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\is-extglob\package.json133887757882214217 0
-87C:\Users\gresk\Documents\GitHb\Simply-Chocolate\src\sass\components\_section-eight.scss133889426864061523 0
+87C:\Users\gresk\Documents\GitHb\Simply-Chocolate\src\sass\components\_section-eight.scss133893780229925721 0
 106C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\@parcel\package-manager\test\fixtures\has-foo133887757886837085 1
 111C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\@parcel\transformer-babel\lib\remapAstLocations.js133887757885290460 0
 99C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\caniuse-lite\data\features\lazyload.js133887757890917251 0
@@ -490,8 +490,8 @@
 92C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\caniuse-lite\data\regions\TG.js133887757892415352 0
 87C:\Users\gresk\Documents\GitHb\Simply-Chocolate\src\images\vika-sec7-2x-desktop-min.jpg133887729017040870 0
 79C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\svgo\lib\parser.js133887757886531141 0
-65C:\Users\gresk\Documents\GitHb\Simply-Chocolate\src\css\index.css133889426864762585 0
-69C:\Users\gresk\Documents\GitHb\Simply-Chocolate\src\css\index.css.map133889426864762585 0
+65C:\Users\gresk\Documents\GitHb\Simply-Chocolate\src\css\index.css133893780230718302 0
+69C:\Users\gresk\Documents\GitHb\Simply-Chocolate\src\css\index.css.map133893780230718302 0
 74C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\yaml\index.js133887757884697163 0
 112C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\caniuse-lite\data\features\css-placeholder-shown.js133887757888943418 0
 88C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\nan\nan_persistent_12_inl.h133887757885250407 0
@@ -502,11 +502,11 @@
 108C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\css-tree\lib\tokenizer\char-code-definitions.js133887757885195250 0
 95C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\@parcel\core\lib\resolveOptions.js133887757888381685 0
 92C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\caniuse-lite\data\regions\ZM.js133887757892996321 0
-69C:\Users\gresk\Documents\GitHb\Simply-Chocolate\src\css\index.min.css133889426864762585 0
+69C:\Users\gresk\Documents\GitHb\Simply-Chocolate\src\css\index.min.css133893780230728346 0
 92C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\source-map-js\lib\quick-sort.js133887757884108594 0
 123C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\dom-serializer\node_modules\entities\lib\decode_codepoint.d.ts133887757885340455 0
 110C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\caniuse-lite\data\features\css-scroll-timeline.js133887757889018537 0
-73C:\Users\gresk\Documents\GitHb\Simply-Chocolate\src\css\index.min.css.map133889426864762585 0
+73C:\Users\gresk\Documents\GitHb\Simply-Chocolate\src\css\index.min.css.map133893780230728346 0
 68C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\@parcel133887757894839792 1
 86C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\csso\lib\replace\color.js133887757885345460 0
 136C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\msgpackr-extract\node_modules\node-gyp-build-optional-packages\package.json133887757884641942 0
@@ -2526,7 +2526,7 @@
 100C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\caniuse-lite\data\features\objectrtc.js133887757891473101 0
 78C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\json5\lib\util.js133887757885425596 0
 89C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\css-tree\lib\syntax\index.js133887757887569274 0
-75C:\Users\gresk\Documents\GitHb\Simply-Chocolate\dist\index.c87171fe.css.map133889426868635957 0
+75C:\Users\gresk\Documents\GitHb\Simply-Chocolate\dist\index.c87171fe.css.map133893780198335132 0
 85C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\json5\dist\index.min.mjs133887757885841901 0
 81C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\json5\dist\index.mjs133887757885957823 0
 103C:\Users\gresk\Documents\GitHb\Simply-Chocolate\node_modules\json-parse-even-better-errors\CHANGELOG.md133887757882881064 0
@@ -4830,8 +4830,8 @@
 94C:\Users\gresk\Documents\GitHb\Simply-Chocolate\dist\choco-sec8-ad-1x-desktop-min.5ddfb9ba.jpg133889426868360258 0
 91C:\Users\gresk\Documents\GitHb\Simply-Chocolate\dist\honey-sec5-2x-desktop-min.656576f2.jpg133889426868756297 0
 74C:\Users\gresk\Documents\GitHb\Simply-Chocolate\dist\index.2ff9fc03.js.map133889426868550873 0
-71C:\Users\gresk\Documents\GitHb\Simply-Chocolate\dist\index.c87171fe.css133889426868635957 0
-63C:\Users\gresk\Documents\GitHb\Simply-Chocolate\dist\index.html133889426869237352 0
+71C:\Users\gresk\Documents\GitHb\Simply-Chocolate\dist\index.c87171fe.css133893780198335132 0
+63C:\Users\gresk\Documents\GitHb\Simply-Chocolate\dist\index.html133893773644952869 0
 93C:\Users\gresk\Documents\GitHb\Simply-Chocolate\dist\natalia-sec7-1x-desktop-min.927dd902.jpg133889426868470578 0
 91C:\Users\gresk\Documents\GitHb\Simply-Chocolate\dist\nazar-sec7-1x-desktop-min.0a8551ee.jpg133889426868475569 0
 91C:\Users\gresk\Documents\GitHb\Simply-Chocolate\dist\nazar-sec7-2x-desktop-min.3f42144a.jpg133889426868766295 0

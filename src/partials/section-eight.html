@@ -1,6 +1,6 @@
 <section class="subscribe">
   <div class="container">
-    <h2 class="title">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+    <h2 class="title title--white">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
     <p class="subscribe__text">
       From the velvety texture to the rich and complex flavor, our New Chocolate
       is a true indulgence that will leave you craving more. Made with only the
@@ -12,9 +12,23 @@
     </button>
     <div class="subscribe__backdrop subscribe__is-hidden" data-modal>
       <div class="subscribe__modal">
-<h1 class="subscribe__modal-title">Explore our 
-<span class="subscribe__title-span">new chocolate</span> first!</h1>
         <button class="subscribe__btn" data-modal-close>Закрити</button>
+        <form class="subscribe__form" action="/submit" method="POST">
+          <h2 class="subscribe__modal-title">
+            Explore our
+            <span class="subscribe__title-span">new chocolate</span> first!
+          </h2>
+          <div>
+          <input
+            class="subscribe__input"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button class="modal__subscribe-button" type="submit">Submit</button>
+        </form>
+        </div>
       </div>
     </div>
   </div>

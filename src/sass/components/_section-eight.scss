@@ -5,17 +5,15 @@
 
   @media screen and (min-width: 375px) {
     padding: 62px 0;
-    max-width: 375px;
+    min-width: 375px;
     margin: 0 auto;
     height: 370px;
   }
   @media screen and (min-width: 768px) {
-    background-size: 768px 370px;
     padding: 72px;
     max-width: 768px;
   }
   @media screen and (min-width: 1200px) {
-    background-size: 1200px 370px;
     max-width: 1200px;
   }
 }
@@ -45,14 +43,12 @@
 }
 
 .subscribe__text {
-  // font-family: $font-family;
   text-align: center;
   color: #fff;
   margin: 0 auto;
 
   @media screen and (min-width: 375px) {
     width: 326px;
-    font-size: 14px;
     line-height: 1.29;
   }
 
@@ -62,7 +58,6 @@
 }
 
 .button-subscribe {
-  // font-family: $font-family;
   font-weight: 600;
   color: #fff;
   border-radius: 100px;
@@ -75,7 +70,6 @@
     height: 41px;
     margin: 0 auto;
     margin-top: 24px;
-    font-size: 14px;
   }
 
   @media screen and (min-width: 768px) {
@@ -111,11 +105,29 @@
   transform: translate(-50%, -50%);
   background-image: url(../images/choco-sec8-ad-1x-desktop-min.jpg);
   background-repeat: no-repeat;
+  border-radius: 15px;
+  overflow: hidden; 
   @media screen and (min-width: 375px) {
     background-size: 311px 169px;
     width: 311px;
     height: 350px;
     max-width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 538px;
+    height: 412px;
+    background-size: 538px 196px;
+  }
+}
+
+
+
+.subscribe__form {
+margin-top: 162px;
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+  margin-top : 184px; 
   }
 }
 
@@ -126,13 +138,25 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: black;
-  margin-top: 201px;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.17;
+    width: 298px;
+    height: 58px;
+  }
 }
-.subscribe__title-span{
+.subscribe__title-span {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: orange;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
+
+
+
