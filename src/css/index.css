@@ -100,15 +100,29 @@ body {
     max-width: 1200px;
   }
 }
+.header {
+  padding-top: 20px;
+  padding-bottom: 14px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    width: 704px;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 21px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .header {
-    margin: 0 31px;
+    width: 1136px;
   }
 }
 
-.header .container {
-  margin: 0 auto;
-  padding: 0 15px;
+@media screen and (min-width: 768px) {
+  .header .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .header .container {
@@ -154,11 +168,11 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  padding-left: 120px;
+  margin-left: 120px;
 }
 @media screen and (min-width: 768px) {
   .burger-menu {
-    padding-left: 495px;
+    margin-left: 489px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -170,6 +184,7 @@ body {
 .burger-menu__icon {
   width: 28px;
   height: 28px;
+  stroke: #111;
 }
 
 .modal-window.is-hidden {
@@ -243,6 +258,12 @@ body {
   width: 28px;
   height: 28px;
   fill: #fafafa;
+}
+
+.modal-window__close-btn-x:hover {
+  width: 40px;
+  height: 40px;
+  fill: #fd9222;
 }
 
 .navigation__list {

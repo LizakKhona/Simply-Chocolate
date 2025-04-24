@@ -1,13 +1,26 @@
 .header {
+    
+    padding-top: 20px;
+    padding-bottom: 14px;
+    @media screen and (min-width: 768px) {
+        width: 704px;
+        margin: 0 auto;
+        padding-top: 24px;
+        padding-bottom: 21px;
+      }
     @media screen and (min-width: 1200px) {
-      margin: 0 31px;
+      width: 1136px;
     }
   }
   
   .header .container {
-    margin: 0 auto;
-    padding: 0 15px;
+    // margin: 0 auto;
+    // padding: 0 15px;
   
+    @media screen and (min-width: 768px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
     @media screen and (min-width: 1200px) {
       display: flex;
       align-items: center;
@@ -49,10 +62,9 @@
     background: none;
     border: none;
     cursor: pointer;
-    padding-left: 120px;
-  
+    margin-left: 120px;
     @media screen and (min-width: 768px) {
-      padding-left: 495px;
+      margin-left: 489px;
     }
   
     @media screen and (min-width: 1200px) {
@@ -63,6 +75,7 @@
   .burger-menu__icon {
     width: 28px;
     height: 28px;
+    stroke: $black-color;
   }
   
   .modal-window.is-hidden {
@@ -132,6 +145,11 @@
     width: 28px;
     height: 28px;
     fill: $white-color;
+  }
+  .modal-window__close-btn-x:hover{
+    width: 40px;
+    height: 40px;
+    fill: $orange-color;
   }
   
   .navigation__list {
