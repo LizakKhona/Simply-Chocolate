@@ -1,5 +1,4 @@
 .header {
-    
     padding-top: 20px;
     padding-bottom: 14px;
     @media screen and (min-width: 768px) {
@@ -57,7 +56,9 @@
       height: 24px;
     }
   }
-  
+  .header .navigation{
+    margin: 0;
+  }
   .burger-menu {
     background: none;
     border: none;
@@ -117,7 +118,7 @@
       background-color: transparent;
       flex-direction: row;
       justify-content: center;
-      align-items: baseline;
+      align-items: center;
       transform: none;
       opacity: 1;
       visibility: visible;
@@ -144,7 +145,7 @@
   .modal-window__close-btn-x {
     width: 28px;
     height: 28px;
-    fill: $white-color;
+    stroke: $white-color;
   }
   .modal-window__close-btn-x:hover{
     width: 40px;
@@ -162,7 +163,7 @@
     padding: 136px 20px 40px;
   
     @media screen and (min-width: 768px) {
-      padding: 156px 83px 83px;
+      padding: 156px 70px 81px;
     }
   
     @media screen and (min-width: 1200px) {
@@ -178,6 +179,7 @@
     font-size: 18px;
     font-weight: 500;
     transition: color 0.3s;
+    position: relative;
   
     @media screen and (min-width: 1200px) {
       font-family: $font-family;
@@ -188,11 +190,23 @@
       color: $black-color;
     }
   }
-  
-  .navigation__linkk:hover {
+  .navigation__linkk::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: $orange-color;
+    margin-top: 8px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  .navigation__linkk:hover{
     color: $orange-color;
   }
-  
+  .navigation__linkk:hover::after{
+    opacity: 1;
+  } 
   .modal-window__social {
     display: flex;
     gap: 18px;
@@ -204,6 +218,8 @@
     }
     @media screen and (min-width: 1200px) {
       padding-left: 0;
+      margin: 0
+      ;
     }
   }
   
