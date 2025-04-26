@@ -25,10 +25,6 @@
     }
 }
 
-.carousel__indicators {
-    display: none;
-}
-
 .fans {
     padding-top: 72px;
     padding-bottom: 72px;
@@ -134,6 +130,10 @@
     }
 }
 
+.carousel-control__button {
+    opacity: 0;
+}
+
 // СТИЛІ МОДАЛЬНОГО ВІКНА 
 
 .review__backdrop {
@@ -144,6 +144,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .review__backdrop.is-hidden {
@@ -164,6 +165,9 @@
     background-color: $white-color;
     transform: translate(-50%, -50%);
 
+    @media screen and (min-width:375px) and (max-width:767px) {
+        padding: 40px 40px;
+    }
 }
 
 .review__colse-btn {
@@ -181,14 +185,35 @@
 }
 
 .review__text {
+    display: none;
     text-align: left;
-    width: 254px;
     height: 48px;
+}
+
+.review__text--mobile {
+    @media screen and (min-width:375px) and (max-width:767px) {
+        display: block;
+        width: 254px;
+    }
+}
+
+.review__text--tablet {
+    @media screen and (min-width:768px) {
+        display: block;
+        font-size: 24px;
+        width: 320px;
+    }
 }
 
 .review__label {
     font-weight: 500;
     color: $black-color;
+}
+
+.review__container:not(:first-child) {
+    @media screen and (min-width:768px) {
+        margin-top: 19px;
+    }
 }
 
 .review__container:nth-child(3) {
@@ -200,20 +225,53 @@
     position: absolute;
     top: 14px;
     left: 18px;
+    padding-right: 8px;
+    border-right: 2px solid #eeeeee;
+
+    @media screen and (min-width:768px) {
+        display: block;
+        font-size: 18px;
+        font-weight: 500;
+        top: 17px;
+        left: 24px;
+        padding-right: 32px;
+    }
+}
+
+.number__svg {
+    width: 32px;
+    height: 24px;
 }
 
 .review__data {
     background-color: $white-color;
     color: rgba(64, 64, 64, 0.3);
     width: 263px;
-    height: 45px;
     padding: 14px 18px;
     border: 1.5px solid #eeeeee;
     border-radius: 10px;
+
+    @media screen and (min-width:768px) {
+        width: 437px;
+        padding: 22px 24px;
+        font-size: 18px;
+    }
 }
 
 .review__data--number {
-    padding-left: 114px;
+    padding-left: 106px;
+
+    @media screen and (min-width:768px) {
+        padding-left: 177px;
+    }
+}
+
+.review__data--comment {
+    height: 91px;
+
+    @media screen and (min-width:768px) {
+        height: 137px;
+    }
 }
 
 .review__btn {
@@ -221,8 +279,15 @@
     color: $white-color;
     padding: 12px 28px;
     width: 93px;
+    margin-top: 18px;
     height: 41px;
     border: none;
     border-radius: 100px;
     font-weight: 600;
+
+    @media screen and (min-width:768px) {
+        width: 117px;
+        height: 45px;
+        padding: 14px 40px;
+    }
 }
