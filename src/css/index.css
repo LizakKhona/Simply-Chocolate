@@ -970,26 +970,67 @@ body {
   color: #111;
 }
 
+.products__mobile {
+  display: none;
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .products__mobile {
+    display: block;
+  }
+}
+
+.products__desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .products__desktop {
+    display: block;
+  }
+}
+
 .products {
+  position: relative;
   padding-top: 72px;
   background-color: #fafafa;
-  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .products {
+    padding-top: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products {
+    padding-top: 41px;
+  }
 }
 
 .products__list {
   display: flex;
   -moz-column-gap: 18px;
        column-gap: 18px;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products__list {
+    transform: translateX(33px);
+  }
 }
 
 .products__item {
   background: #fff;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
-  width: 335px;
+  max-width: 335px;
   padding: 32px 52px;
   margin-top: 32px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .products__item {
+    padding: 32px 20px;
+    max-width: 270px;
+    flex-basis: calc((100% - 54px) / 4);
+  }
 }
 
 .products__img {
@@ -1023,7 +1064,6 @@ body {
 }
 
 .products__price {
-  font-family: "Montserrat", sans-serif;
   display: block;
   font-weight: 600;
   font-size: 14px;
@@ -1033,7 +1073,8 @@ body {
   border-radius: 100px;
   padding: 8px 20px;
   margin: 0 auto;
-  width: 94px;
+  width: 95px;
+  height: 33px;
   margin-bottom: 32px;
 }
 
@@ -1043,32 +1084,18 @@ body {
 }
 
 .carousel__svg {
-  margin-top: 20px;
+  margin-top: 32px;
   height: 13px;
 }
 
-.carousel__desktop {
-  display: none;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .carousel-item {
+    width: auto;
+  }
 }
 
-.carousel-control-prev {
+.products__button {
   position: absolute;
-  opacity: 0;
-}
-
-.carousel-control-prev:hover {
-  position: absolute;
-  opacity: 0;
-}
-
-.carousel-control-next {
-  position: absolute;
-  opacity: 0;
-}
-
-.carousel-control-next:hover {
-  position: absolute;
-  opacity: 0;
 }
 
 .sellers {
@@ -1291,10 +1318,6 @@ body {
   }
 }
 
-.carousel__indicators {
-  display: none;
-}
-
 .fans {
   padding-top: 72px;
   padding-bottom: 72px;
@@ -1410,6 +1433,10 @@ body {
   }
 }
 
+.carousel-control__button {
+  opacity: 0;
+}
+
 .review__backdrop {
   position: fixed;
   top: 0;
@@ -1418,6 +1445,7 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .review__backdrop.is-hidden {
@@ -1438,6 +1466,11 @@ body {
   background-color: #fafafa;
   transform: translate(-50%, -50%);
 }
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .review__modal {
+    padding: 40px 40px;
+  }
+}
 
 .review__colse-btn {
   position: absolute;
@@ -1454,14 +1487,35 @@ body {
 }
 
 .review__text {
+  display: none;
   text-align: left;
-  width: 254px;
   height: 48px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .review__text--mobile {
+    display: block;
+    width: 254px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .review__text--tablet {
+    display: block;
+    font-size: 24px;
+    width: 320px;
+  }
 }
 
 .review__label {
   font-weight: 500;
   color: #111;
+}
+
+@media screen and (min-width: 768px) {
+  .review__container:not(:first-child) {
+    margin-top: 19px;
+  }
 }
 
 .review__container:nth-child(3) {
@@ -1473,20 +1527,57 @@ body {
   position: absolute;
   top: 14px;
   left: 18px;
+  padding-right: 8px;
+  border-right: 2px solid #eeeeee;
+}
+@media screen and (min-width: 768px) {
+  .review__label--number {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    top: 17px;
+    left: 24px;
+    padding-right: 32px;
+  }
+}
+
+.number__svg {
+  width: 32px;
+  height: 24px;
 }
 
 .review__data {
   background-color: #fafafa;
   color: rgba(64, 64, 64, 0.3);
   width: 263px;
-  height: 45px;
   padding: 14px 18px;
   border: 1.5px solid #eeeeee;
   border-radius: 10px;
 }
+@media screen and (min-width: 768px) {
+  .review__data {
+    width: 437px;
+    padding: 22px 24px;
+    font-size: 18px;
+  }
+}
 
 .review__data--number {
-  padding-left: 114px;
+  padding-left: 106px;
+}
+@media screen and (min-width: 768px) {
+  .review__data--number {
+    padding-left: 177px;
+  }
+}
+
+.review__data--comment {
+  height: 91px;
+}
+@media screen and (min-width: 768px) {
+  .review__data--comment {
+    height: 137px;
+  }
 }
 
 .review__btn {
@@ -1494,10 +1585,18 @@ body {
   color: #fafafa;
   padding: 12px 28px;
   width: 93px;
+  margin-top: 18px;
   height: 41px;
   border: none;
   border-radius: 100px;
   font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .review__btn {
+    width: 117px;
+    height: 45px;
+    padding: 14px 40px;
+  }
 }
 
 .footer {
