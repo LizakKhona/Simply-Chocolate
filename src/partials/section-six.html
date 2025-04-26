@@ -27,9 +27,98 @@
                   Cacao has been around for thousands of years and was first discovered by the Native American 
                     tribe called the Mayans. 
                 </p>
-                <button class="sellers-content__button">
+                <button class="sellers-content__button" data-modal-open>
                   Buy now  
                 </button>
+                <div class="sellers__backdrop sellers__is-hidden" data-modal>
+        <div class="modal-order">
+            <button class="sellers__btn-close" data-modal-close>
+                <svg width="18" height="18" class="button-close-svg">
+                    <use href="../icons/sprite.svg#icon-x"></use>
+                </svg>
+            </button>
+            <h2 class="title">
+                <span class="title--orange">BUY</span>NOW
+            </h2>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img srcset="./images/choco-sec6-modal-1x-desktop-min.jpg 1x, ./images/choco-sec6-modal-2x-desktop-min.jpg 2x"
+                        src="./images/choco-sec6-modal-1x-desktop-min.jpg"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img srcset="./images/milk-white-choco-sec6-modal-1x-desktop-min.jpg 1x, ./images/milk-white-choco-sec6-modal-2x-desktop-min.jpg 2x"
+                         src="./images/milk-white-choco-sec6-modal-2x-desktop-min.jpg"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img srcset="./images/2choco-sec6-modal-1x-desktop-min.jpg 1x, ./images/2choco-sec6-modal-2x-desktop-min.jpg 2x"
+                        src="./images/2choco-sec6-modal-1x-desktop-min.jpg"
+                            class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <form class="form" autocomplete="on">
+                <div class="form-field">
+                    <label class="label" for="name">Personal Information</label>
+                    <div class="input-wrapper">
+                        <input class="input" type="text" name="name" id="name" placeholder="Name" required>
+                        <input class="input" type="text" name="name" id="surname" placeholder="Surname" required>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label class="label" for="email">Email</label>
+                    <div class="input-wrapper">
+                        <input class="input" type="email" name="email" id="email" placeholder="Enter your email"
+                            required>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label class="label" for="phone-number">Phone Number</label>
+                    <div class="input-wrapper">
+                        <input class="input" type="number" name="phone-number" id="phone-number"
+                            placeholder="Phone Number" required>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label class="label" for="card-number">Card Number</label>
+                    <div class="input-wrapper">
+                        <input class="input" type="number" name="card-number" id="card-number"
+                            placeholder="Enter Card" required>
+                    </div>
+                </div>
+                <div class="form-field form-textarea">
+                    <label class="label" for="comment">Comment</label>
+                    <div class="textarea-wrappre">
+                        <textarea class="textarea" name="comment" id="comment" placeholder="Enter text"></textarea>
+                    </div>
+                </div>
+
+
+                <button class="button-submit">Submit</button>
+            </form>
+        </div>
+    </div>
             </div>
         </div>
+        <script type="module" src="./js/sec6-modal.js"></script>
     </section>
